@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gateway Form</title>
+    <style>
+        body {
+            background-color: #fff;
+            font-family: sans-serif;
+        }
+
+        .registration-form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .registration-form h1 {
+            text-align: center;
+        }
+
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .registration-form button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="registration-form">
+        <h1>Gateway Form</h1>
+        <form action="/" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button>Submit</button>
+          </form>
+    </div>
+
+</body>
+
+</html>
+
+
+     <script>
+        const btn = document.querySelector('button');
+        btn.addEventListener("click", () => {
+            console.log("Hello Bete");
+        })
+    </script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    .container {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .button {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #0088cc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Admin Page</h1>
+    <form action="/" method="POST">
+      <table>
+        <tr>
+          <th>SSID</th>
+          <td><input type="text" name="ssid" /></td>
+        </tr>
+        <tr>
+          <th>Encryption</th>
+          <td>
+            <select name="encryption">
+              <option value="None">None</option>
+              <option value="WEP">WEP</option>
+              <option value="WPA">WPA</option>
+              <option value="WPA2">WPA2</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Authentication</th>
+          <td>
+            <select name="authentication">
+              <option value="Open">Open</option>
+              <option value="Shared">Shared</option>
+              <option value="PSK">PSK</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Frequency Band</th>
+          <td>
+            <select name="frequency_band">
+              <option value="2.4GHz">2.4GHz</option>
+              <option value="5GHz">5GHz</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="password" name="password" /></td>
+        </tr>
+
+      </table>
+      <input type="submit" value="Submit" class="button" />
+    </form>
+  </div>
+</body>
+
+</html>
